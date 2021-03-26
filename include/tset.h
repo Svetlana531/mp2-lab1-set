@@ -39,5 +39,18 @@ public:
 
   friend istream &operator>>(istream &istr, TSet &bf);
   friend ostream &operator<<(ostream &ostr, const TSet &bf);
+
+  void InFile(std::string file_name);
+  void FromFile(std::string file_name);
+
+  void ChangeElements(int n, int new_elem);
+  TSet getElements(int K);
 };
+std::string DelBadSymb(std::string str);
+int CountNumOfDig(const std::string& str);
+void StrToArrStr(std::string str, std::string* arr);
+int StrToInt(std::string str);
+void ArrStrToArrInt(std::string* arrStr, int* arrInt, int len);
+int FindMaxElem(int* arr, int len);
+
 #endif
